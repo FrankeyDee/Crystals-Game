@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <title>jQuery Crystals Collector</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Modak&display=swap">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Modak&display=swap" >
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
     
 </head>
 <body>
         
 <!-------------------------TITLE------------------------------->
-<div class="top">
+<div class="fixed-top"></div>
     <header>    
         <h1 class="top-title">Crystal Collector!</h1>
     </header>
@@ -34,24 +29,22 @@
         <li>Each time the game starts, the value for each crystal changes.</li>
        </ol>
 </div> 
-<!------------------------ Crystals --------------------------------->
-<div class="gemDiv">
-<img id="gem1" class="gems" src="assets/images/gem1.jpg" alt="gem 1" width="100px" height="100px">
-<img id="gem2" class="gems" src="assets/images/gem2.jpg" alt="gem 2" width="100px" height="100px">
-<img id="gem3" class="gems" src="assets/images/gem3.jpg" alt="gem 3" width="100px" height="100px">
-<img id="gem4" class="gems" src="assets/images/gem4.jpg" alt="gem 4" width="100px" height="100px">
-</div>
-<!---------------------Random Number + user Number------------------->
-<div class="scoreboard">
+<!-----------------------------Random Number----------------------------->
+<div class="random-number">
     <h2 id="winNumber">Number to match: <span id="target"></span></h2>
-    <h2 id="userNumber">Player number: <span id="playerScore"</span></span></h2>
 </div>
-<!----------------------------Score Card---------------------------->
-<div class="winsloss">
-    <h2><strong>Wins: </strong><span id="win"></span></h2>
-    <h2><strong>Losses: </strong><span id="loss"></span></h2>
+<!----------------------------Score Card--------------------------------->
+<div class="score-card">
+        <p id="win-or-lose"></p>
+        <ol id="scores">
+            <li id="wins">Wins:</li>
+            <li id="loss">Losses:</li>
+        </ol>
 </div>
+<!--------------------------------Crystals------------------------------->
+<div class="gem-container">
 
+</div>
 <!-----------------------------Footer------------------------------------>
 <div class="bottom">
 
