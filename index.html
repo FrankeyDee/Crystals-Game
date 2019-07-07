@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>jQuery Crystals Collector</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Modak&display=swap">  
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     <script
@@ -15,47 +18,51 @@
     
 </head>
 <body>
-        
-<!-------------------------TITLE------------------------------->
-<div class="top">
-    <header>    
-        <h1 class="top-title">Crystal Collector!</h1>
-    </header>
-</div>
-<!-----------------------------INSTRUCTIONS------------------------------>
-<div class="instructions">
-        <h2>How to Play:</h2>
-       <ol id="rules" class="list rules-left">
-        <li>You will be given a random number at the start of the game.   
-        </li>
-        <li>There are four crystals below. By clicking on a crystal, you will add a psecific amount of points to your 'total score.'</li>
-        <li>You win the game by matching your total score to the given random number. You lose the game if your total score goes above the random number.</li>
-        <li>The value of each crystal is hidden from you until you click on it.</li>
-        <li>Each time the game starts, the value for each crystal changes.</li>
-       </ol>
-</div> 
-<!------------------------ Crystals --------------------------------->
-<div class="gemDiv">
-<img id="gem1" class="gems" src="assets/images/gem1.jpg" alt="gem 1" width="100px" height="100px">
-<img id="gem2" class="gems" src="assets/images/gem2.jpg" alt="gem 2" width="100px" height="100px">
-<img id="gem3" class="gems" src="assets/images/gem3.jpg" alt="gem 3" width="100px" height="100px">
-<img id="gem4" class="gems" src="assets/images/gem4.jpg" alt="gem 4" width="100px" height="100px">
-</div>
-<!---------------------Random Number + user Number------------------->
-<div class="scoreboard">
-    <h2 id="winNumber">Number to match: <span id="target"></span></h2>
-    <h2 id="userNumber">Player number: <span id="playerScore"</span></span></h2>
-</div>
-<!----------------------------Score Card---------------------------->
-<div class="winsloss">
-    <h2><strong>Wins: </strong><span id="win"></span></h2>
-    <h2><strong>Losses: </strong><span id="loss"></span></h2>
-</div>
+    
+        <div class="wrapper">
+                <div class="box1">
+                        <div class="top">
+                                <header>    
+                                    <h1 class="top-title">Crystal Collector!</h1>
+                                </header>
+                            </div>
+                </div>
+                <div class="box2">
+                        <div class="instructions">
+                                <h2>How to Play:</h2>
+                               <ol id="rules" class="list rules-left">
+                                <li>You will be given a random number at the start of the game.   
+                                </li>
+                                <li>There are four crystals below. By clicking on a crystal, you will add a psecific amount of points to your 'total score.'</li>
+                                <li>You win the game by matching your total score to the given random number. You lose the game if your total score goes above the random number.</li>
+                                <li>The value of each crystal is hidden from you until you click on it.</li>
+                                <li>Each time the game starts, the value for each crystal changes.</li>
+                               </ol>
+                        </div> 
+                </div>
+                <div class="box3">
+                        <div class="gemDiv">
+                                <img id="gem1" class="gems" src="assets/images/gem1.jpg" alt="gem 1" width="100px" height="100px">
+                                <img id="gem2" class="gems" src="assets/images/gem2.jpg" alt="gem 2" width="100px" height="100px">
+                                <img id="gem3" class="gems" src="assets/images/gem3.jpg" alt="gem 3" width="100px" height="100px">
+                                <img id="gem4" class="gems" src="assets/images/gem4.jpg" alt="gem 4" width="100px" height="100px">
+                                </div>
+                </div>
+                <div class="box4">
+                    <div class="scoreboard">
+                        <div class="results"></div>
+                        <h2 id="winNumber">Number to match: <span id="target"></span></h2>
+                        <h2 id="userNumber">Player number: <span id="playerScore"</span></span></h2>
+                    </div></div>
+                <div class="box5">
+                    <div class="winsloss">
+                        <p id='score'>score</p>
+                        <h2><strong>Wins: </strong><span id="win"></span></h2>
+                        <h2><strong>Losses: </strong><span id="loss"></span></h2>
+                    </div></div>
 
-<!-----------------------------Footer------------------------------------>
-<div class="bottom">
+        </div></div>
 
-</div>
 
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>

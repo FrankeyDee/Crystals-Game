@@ -35,10 +35,9 @@
             crystalOne= randomNum(1, 12);
             crystalTwo= randomNum(1, 12);
             crystalThree= randomNum(1, 12);
-            crystalFour= randomNum(1, 12);
-
+            crystalFour= randomNum(1, 12);    
         }
-    
+            
         
         $("#gem1").on("click", function(){
             counter += crystalOne;
@@ -75,13 +74,13 @@
     
         if (counter === winNumber){
             wins += 1;
-            alert("Winner!");
+            document.querySelector('.results').innerHTML = 'Winner!';
             $(win).text(wins);
             reset();
     
         } else if(counter > winNumber){
             losses += 1;
-            alert("Bummer!");
+            document.querySelector('.results').innerHTML = 'Bummer!';
             $(loss).text(losses);
             reset();
         }
