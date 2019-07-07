@@ -29,8 +29,8 @@
     
         function reset(){
             counter = 0;
-            $("#target").html(winNumber);
             winNumber = randomNum(40,90);
+            $("#target").html(winNumber);
             $("#playerScore").text(counter);
             crystalOne= randomNum(1, 12);
             crystalTwo= randomNum(1, 12);
