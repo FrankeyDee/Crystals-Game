@@ -7,4 +7,4 @@ The game also utilizes 3 vertical containers to enclose 3 main sections: the ins
 <img src="./assets/images/Crystals.JPG"></img>
 
 
-https://frankeydee.github.io/unit-4-game/
+https://frankeydee.github.io/Crystals-Game/
