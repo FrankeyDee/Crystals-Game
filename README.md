@@ -4,7 +4,7 @@ This game was created to show my understanding of jQuery. Each gem adds a specif
 
 The game also utilizes 3 vertical containers to enclose 3 main sections: the instructions, the crystals to click, and the points counter. The top uses a banner with a colorful background.
 
-<img src="../assets/images/crystals.jpg"></img>
+<img src="../assets/images/Crystals.JPG"></img>
 
 
 https://frankeydee.github.io/unit-4-game/
